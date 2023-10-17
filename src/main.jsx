@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         path:'/addUser',
         element:<AddUser />
       },{
-        path:'/allUser',
+        path:'/allUsers',
         element:<AllUsers></AllUsers>,
         loader: () => fetch('https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users')
       },

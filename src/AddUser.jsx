@@ -27,7 +27,7 @@ const AddUser = () => {
 
     return (
         <div className="mt-10 max-w-7xl border-2 mx-auto p-10">
-            <Link className="btn btn-outline" to="/allUser">All user</Link>
+            <Link className="btn btn-outline" to="/allUsers">All user</Link>
             <div className=" p-20">
                 <h2 className=" text-xl text-center font-bold"> New user</h2>
                 <form onSubmit={handleAddUser}>
