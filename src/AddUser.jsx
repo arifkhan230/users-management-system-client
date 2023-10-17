@@ -12,7 +12,7 @@ const AddUser = () => {
         console.log(user)
 
         // sending user to server
-        fetch('https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/user', {
+        fetch('https://users-management-system-server-ovqjehnhq-arif-khans-projects.vercel.app/user', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -27,7 +27,10 @@ const AddUser = () => {
 
     return (
         <div className="mt-10 max-w-7xl border-2 mx-auto p-10">
-            <Link className="btn btn-outline" to="/allUsers">All user</Link>
+            <Link
+                className="btn btn-outline"
+                to="/allUser">All user
+            </Link>
             <div className=" p-20">
                 <h2 className=" text-xl text-center font-bold"> New user</h2>
                 <form onSubmit={handleAddUser}>
@@ -51,11 +54,11 @@ const AddUser = () => {
                             </label>
                             <div className="flex items-center gap-8 ">
                                 <div className="flex">
-                                    <input type="checkbox" checked name="male" id="" />
+                                    <input type="checkbox" name="male" id="" />
                                     <span className="label-text ml-2"> Male</span>
                                 </div>
                                 <div className="flex">
-                                    <input type="checkbox" checked name="female" id="" />
+                                    <input type="checkbox" name="female" id="" />
                                     <span className="label-text ml-2"> FeMale</span>
                                 </div>
                             </div>
@@ -67,11 +70,11 @@ const AddUser = () => {
                             </label>
                             <div className="flex items-center gap-8 ">
                                 <div className="flex">
-                                    <input type="checkbox" checked name="active" id="" />
+                                    <input type="checkbox" name="active" id="" />
                                     <span className="label-text ml-2">Active</span>
                                 </div>
                                 <div className="flex">
-                                    <input type="checkbox" checked name="inactive" id="" />
+                                    <input type="checkbox" name="inactive" id="" />
                                     <span className="label-text ml-2"> inactive</span>
                                 </div>
                             </div>

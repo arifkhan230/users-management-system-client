@@ -25,15 +25,16 @@ const router = createBrowserRouter([
       {
         path:'/addUser',
         element:<AddUser />
-      },{
-        path:'/allUsers',
+      },
+      {
+        path:'/allUser',
         element:<AllUsers></AllUsers>,
-        loader: () => fetch('https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users')
+        loader: () => fetch('https://users-management-system-server-ovqjehnhq-arif-khans-projects.vercel.app/users')
       },
       {
         path:'/update/:id',
         element:<UpdateUser></UpdateUser>,
-        loader:({params})=> fetch(`https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users/${params.id}`)
+        loader:({params})=> fetch(`https://users-management-system-server-ovqjehnhq-arif-khans-projects.vercel.app/users/${params.id}`)
       }
     ],
   },
