@@ -28,12 +28,12 @@ const router = createBrowserRouter([
       },{
         path:'/allUser',
         element:<AllUsers></AllUsers>,
-        loader: () => fetch('http://localhost:5000/users')
+        loader: () => fetch('https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users')
       },
       {
         path:'/update/:id',
         element:<UpdateUser></UpdateUser>,
-        loader:({params})=> fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params})=> fetch(`https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users/${params.id}`)
       }
     ],
   },

@@ -12,7 +12,7 @@ const AddUser = () => {
         console.log(user)
 
         // sending user to server
-        fetch('http://localhost:5000/user', {
+        fetch('https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/user', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

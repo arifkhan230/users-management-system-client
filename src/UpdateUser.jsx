@@ -14,7 +14,7 @@ const UpdateUser = () => {
         console.log(user)
         // send update req and get res
 
-        fetch(`http://localhost:5000/users/${_id}`,{
+        fetch(`https://users-management-system-server-8tbljuxtq-arif-khans-projects.vercel.app/users/${_id}`,{
             method: "PUT",
             headers:{
                 'content-type': 'application/json'
